@@ -41,7 +41,7 @@
 
 <style lang="scss">
 html, body, svg {
-  color: gray;
+  color: white;
   margin: 0;
   padding: 0;
 
@@ -54,6 +54,7 @@ html, body, svg {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
   position: fixed;
 
   background-size: cover;
@@ -115,5 +116,17 @@ header {
       padding-right: .8rem;
     }
   }
+}
+
+#home,
+#about,
+#contact
+#services,
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>
