@@ -16,13 +16,9 @@
 <script>
 export default {
   name: 'HomeSection',
-  props: {
-    msg: String
-  }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h1 {
   color: #fff;
@@ -98,7 +94,7 @@ a {
     height: 100%;
     display: flex;
     position: relative;
-    
+
     align-items: center;
     justify-content: center;
 

@@ -1,11 +1,9 @@
 <template>
-  <div class="home">
-    <home-section title="Welcome to Your Vue.js App" />
-    <project-section title="Welcome to Your Vue.js App" />
-    <service-section title="Welcome to Your Vue.js App" />
-    <about-section title="Welcome to Your Vue.js App" />
-    <contact-section title="Welcome to Your Vue.js App" />
-  </div>
+    <home-section />
+    <project-section />
+    <service-section />
+    <about-section />
+    <contact-section />
 </template>
 
 <script>
@@ -27,13 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  body {
-    margin: 0;
-  }
-  
-  section {
-    height: 100vh;
-  }
-</style>
