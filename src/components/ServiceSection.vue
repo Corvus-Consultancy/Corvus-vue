@@ -1,15 +1,11 @@
 <template>
-  <section id="services">
-
-  </section>
+  <section id="services"></section>
 </template>
 
 <script>
 export default {
-  name: 'ServiceSection',
-}
+  name: "ServiceSection",
+};
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

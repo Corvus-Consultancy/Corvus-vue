@@ -12,7 +12,14 @@
 
         <div>
           <h3>Zonneveranda</h3>
-          <p>ZonneVeranda reached out to us to create promotion material for an unexpected opportunity to present themselves at a fair. This fair however, was taking place within two days of us hearing about the project. Considering the prompt nature of the assignment, we allocated our time and managed to create an array of captivating designs within the same day.</p>
+          <p>
+            ZonneVeranda reached out to us to create promotion material for an
+            unexpected opportunity to present themselves at a fair. This fair
+            however, was taking place within two days of us hearing about the
+            project. Considering the prompt nature of the assignment, we
+            allocated our time and managed to create an array of captivating
+            designs within the same day.
+          </p>
         </div>
       </section>
 
@@ -25,8 +32,8 @@
 
 <script>
 export default {
-  name: 'ProjectSection',
-}
+  name: "ProjectSection",
+};
 </script>
 
 <style scoped lang="scss">
@@ -54,7 +61,7 @@ h2 {
     }
 
     h3 {
-      margin: 0 0 .5rem;
+      margin: 0 0 0.5rem;
       font-size: 1.8rem;
       font-weight: 600;
     }

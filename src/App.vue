@@ -1,14 +1,12 @@
 <template>
-  <div class="background">
+  <div class="background"></div>
 
-  </div>
-  
   <header>
     <nav>
       <ol>
         <li>
           <a href="#home">
-            <img src="@/assets/logo.png" width="180"/>
+            <img src="@/assets/logo.png" width="180" />
           </a>
         </li>
 
@@ -36,17 +34,19 @@
     </address>
   </header>
 
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
-html, body, svg {
+html,
+body,
+svg {
   color: white;
   margin: 0;
   padding: 0;
 
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .background {
@@ -58,7 +58,8 @@ html, body, svg {
   position: fixed;
 
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('~@/assets/hero.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("~@/assets/hero.png");
   background-position: center;
 }
 
@@ -78,12 +79,12 @@ header {
 
     font-size: 1rem;
     font-weight: 400;
-    font-style: normal;   
+    font-style: normal;
     text-decoration: none;
 
     &:hover {
       color: #880000;
-      transition: color .15s ease-in-out;
+      transition: color 0.15s ease-in-out;
     }
   }
 
@@ -101,8 +102,12 @@ header {
       justify-content: center;
 
       li {
-        &:first-of-type { margin-right: auto; }
-        &:last-of-type { margin-right: auto; }
+        &:first-of-type {
+          margin-right: auto;
+        }
+        &:last-of-type {
+          margin-right: auto;
+        }
       }
     }
   }
@@ -112,16 +117,15 @@ header {
     align-items: center;
 
     svg {
-      font-size: .8rem;
-      padding-right: .8rem;
+      font-size: 0.8rem;
+      padding-right: 0.8rem;
     }
   }
 }
 
 #home,
 #about,
-#contact
-#services,
+#contact #services,
 #projects {
   height: 100vh;
   display: flex;

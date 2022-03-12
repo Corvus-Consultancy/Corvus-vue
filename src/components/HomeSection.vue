@@ -15,8 +15,8 @@
 
 <script>
 export default {
-  name: 'HomeSection',
-}
+  name: "HomeSection",
+};
 </script>
 
 <style scoped lang="scss">
@@ -32,7 +32,7 @@ h1 {
   span:first-of-type {
     font-weight: 500;
   }
-  
+
   span:last-of-type {
     font-weight: 100;
   }
@@ -45,7 +45,7 @@ p {
   font-weight: 300;
 
   strong {
-   color: #880000; 
+    color: #880000;
   }
 }
 
@@ -82,7 +82,7 @@ a {
       border: #880000;
       background: #880000;
     }
-    
+
     &:after {
       width: 100%;
       background: #880000;

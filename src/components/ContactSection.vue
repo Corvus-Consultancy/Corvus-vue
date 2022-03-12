@@ -1,15 +1,11 @@
 <template>
-  <section id="contact">
-
-  </section>
+  <section id="contact"></section>
 </template>
 
 <script>
 export default {
-  name: 'ContactSection',
-}
+  name: "ContactSection",
+};
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
