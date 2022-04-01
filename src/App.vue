@@ -80,6 +80,7 @@ header {
 
   a {
     color: gray;
+    transition: all 0.3s ease;
 
     font-size: 1rem;
     font-weight: 400;
@@ -140,14 +141,13 @@ header {
   justify-content: center;
 }
 
-a,
-button {
+.button {
   color: #fff;
   width: 30%;
+  margin: 1rem;
   height: 50px;
   border: none;
   padding: 0;
-  margin: 1rem;
   position: relative;
   background: transparent;
 

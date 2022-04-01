@@ -7,7 +7,7 @@
 
     <p>Creating innovative solutions for <strong>your</strong> business.</p>
 
-    <a href="#projects">
+    <a class="button" href="#projects">
       <span>Read more</span>
     </a>
   </section>

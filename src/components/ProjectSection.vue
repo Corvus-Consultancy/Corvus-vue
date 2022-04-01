@@ -38,7 +38,7 @@ export default {
 
 <style scoped lang="scss">
 .projects {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
 

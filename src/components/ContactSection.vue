@@ -14,7 +14,7 @@
       </div>
 
       <div>
-        <button type="submit" value="Subscribe!">
+        <button class="button" type="submit">
           <span>Send us a message</span>
         </button>
       </div>
@@ -69,8 +69,8 @@ form {
 
   textarea {
     width: 100%;
-    height: 160px;
     margin: 1rem;
+    height: 160px;
   }
 }
 </style>
