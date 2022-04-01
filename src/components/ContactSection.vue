@@ -19,7 +19,6 @@
         </button>
       </div>
     </form>
-
   </section>
 </template>
 
@@ -56,9 +55,9 @@ form {
     border-bottom: 2px solid white;
 
     &:hover {
-      border-color: #880000
+      border-color: #880000;
     }
-    
+
     &:placeholder {
       font-size: 1rem;
       font-weight: 400;

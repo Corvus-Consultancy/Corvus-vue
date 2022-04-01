@@ -27,7 +27,7 @@
         </figure>
       </li>
 
-        <li>
+      <li>
         <figure>
           <img src="@/assets/about/raphael.jpg" />
           <figcaption>Rick Taylor</figcaption>
@@ -53,26 +53,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  ul {
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+figure {
+  margin: 1rem;
+  padding: 1rem;
+
+  border: 1px solid white;
+  border-radius: 0.5rem;
+
+  img {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-
-
+    border-radius: 100%;
   }
-  figure {
-    margin: 1rem;
-    padding: 1rem;
-
-    border: 1px solid white;
-    border-radius: .5rem;
-    
-    img {
-      width: 100%;
-      border-radius: 100%;
-    }
-  }
+}
 </style>

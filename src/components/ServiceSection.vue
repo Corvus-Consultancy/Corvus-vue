@@ -63,34 +63,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .services-row {
-    width: 100%;
+.services-row {
+  width: 100%;
+  display: flex;
+
+  section {
+    width: 33.33%;
+    margin: 1rem;
+    border: 1px solid white;
+    padding: 1rem;
     display: flex;
-    
-    section {
-      width: 33.33%;
-      margin: 1rem;
-      border: 1px solid white;
-      padding: 1rem;
-      display: flex;
-      transition: all .3s ease;
+    transition: all 0.3s ease;
 
-      flex-direction: column;
-      align-items: center;
-      border-radius: .5rem;
-      justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: center;
 
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-      }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
 
-      img {
-        width: 35%;
-      }
+    img {
+      width: 35%;
+    }
 
-      h3 {
-        text-align: center;
-      }
+    h3 {
+      text-align: center;
     }
   }
+}
 </style>

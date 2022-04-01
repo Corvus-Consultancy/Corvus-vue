@@ -37,7 +37,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .projects {
   width: 80%;
   display: flex;
