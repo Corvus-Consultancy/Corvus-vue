@@ -49,6 +49,11 @@ svg {
   font-family: "Poppins", sans-serif;
 }
 
+h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
 .background {
   top: 0;
   left: 0;
@@ -125,8 +130,10 @@ header {
 
 #home,
 #about,
-#contact #services,
+#contact,
+#services,
 #projects {
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;

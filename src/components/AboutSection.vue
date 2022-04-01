@@ -1,5 +1,7 @@
 <template>
-  <section id="about"></section>
+  <section id="about">
+    <h2>About us</h2>
+  </section>
 </template>
 
 <script>

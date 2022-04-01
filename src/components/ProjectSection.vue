@@ -37,10 +37,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h2 {
-  font-size: 2.8rem;
-  font-weight: 400;
-}
 
 .projects {
   width: 80%;
