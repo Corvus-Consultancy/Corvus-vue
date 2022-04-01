@@ -44,7 +44,6 @@ svg {
   color: white;
   margin: 0;
   padding: 0;
-
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
@@ -89,7 +88,6 @@ header {
 
     &:hover {
       color: #880000;
-      transition: color 0.15s ease-in-out;
     }
   }
 
@@ -133,11 +131,101 @@ header {
 #contact,
 #services,
 #projects {
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
   display: flex;
+  padding: 0 10vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+a,
+button {
+  color: #fff;
+  width: 30%;
+  height: 50px;
+  border: none;
+  padding: 0;
+  margin: 1rem;
+  position: relative;
+  background: transparent;
+
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+
+  &:after,
+  &:before {
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background: white;
+    transition: all 0.3s ease;
+  }
+
+  &:before {
+    width: 2px;
+    height: 50%;
+  }
+
+  &:after {
+    width: 20%;
+    height: 2px;
+  }
+
+  &:hover {
+    &:before {
+      height: 100%;
+      border: #880000;
+      background: #880000;
+    }
+
+    &:after {
+      width: 100%;
+      background: #880000;
+    }
+  }
+
+  span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+
+    &:after,
+    &:before {
+      top: 0;
+      left: 0;
+      content: "";
+      position: absolute;
+      background: white;
+      transition: all 0.3s ease;
+    }
+
+    &:after {
+      width: 20%;
+      height: 2px;
+    }
+
+    &:before {
+      width: 2px;
+      height: 50%;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+
+      &:before {
+        height: 100%;
+      }
+    }
+  }
 }
 </style>

@@ -64,7 +64,7 @@ export default {
 
 <style scoped lang="scss">
   .services-row {
-    width: 80%;
+    width: 100%;
     display: flex;
     
     section {
@@ -73,8 +73,8 @@ export default {
       border: 1px solid white;
       padding: 1rem;
       display: flex;
-      transition: all .1s ease-in-out;
-      
+      transition: all .3s ease;
+
       flex-direction: column;
       align-items: center;
       border-radius: .5rem;

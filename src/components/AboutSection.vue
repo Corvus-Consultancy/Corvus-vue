@@ -54,7 +54,7 @@ export default {
 
 <style scoped lang="scss">
   ul {
-    width: 80%;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
