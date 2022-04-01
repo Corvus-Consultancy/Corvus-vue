@@ -72,5 +72,10 @@ form {
     margin: 1rem;
     height: 160px;
   }
+
+  .invalid {
+    color: #880000;
+    border-color: #880000;
+  }
 }
 </style>

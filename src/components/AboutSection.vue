@@ -86,7 +86,7 @@ figure {
     font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
-    
+
     color: white;
     margin: 1rem 0;
   }

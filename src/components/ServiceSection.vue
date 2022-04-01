@@ -2,39 +2,50 @@
   <section id="services">
     <h2>Services</h2>
 
-    <div class="services-row">
-      <section>
-        <img :src="consulting" />
-        <h3>Strategic consulting</h3>
-      </section>
+    <!-- <div class="services-row"> -->
+    <ul>
+      <li>
+        <figure>
+          <img :src="consulting" />
+          <figcaption>Strategic consulting</figcaption>
+        </figure>
+      </li>
 
-      <section>
-        <img :src="management" />
-        <h3>Management of Projects & Services</h3>
-      </section>
+      <li>
+        <figure>
+          <img :src="management" />
+          <figcaption>Management of Projects & Services</figcaption>
+        </figure>
+      </li>
 
-      <section>
-        <img :src="crypto" />
-        <h3>Cryptocurrency investments</h3>
-      </section>
-    </div>
+      <li>
+        <figure>
+          <img :src="crypto" />
+          <figcaption>Cryptocurrency investments</figcaption>
+        </figure>
+      </li>
 
-    <div class="services-row">
-      <section>
-        <img :src="research" />
-        <h3>In-depth research</h3>
-      </section>
+      <li>
+        <figure>
+          <img :src="research" />
+          <figcaption>In-depth research</figcaption>
+        </figure>
+      </li>
 
-      <section>
-        <img :src="creation" />
-        <h3>Creation of your original content</h3>
-      </section>
+      <li>
+        <figure>
+          <img :src="creation" />
+          <figcaption>Creation of your original content</figcaption>
+        </figure>
+      </li>
 
-      <section>
-        <img :src="services" />
-        <h3>IT services</h3>
-      </section>
-    </div>
+      <li>
+        <figure>
+          <img :src="services" />
+          <figcaption>IT services</figcaption>
+        </figure>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -63,33 +74,47 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.services-row {
+ul {
   width: 100%;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
-  section {
+  li {
     width: 33.33%;
-    margin: 1rem;
-    border: 1px solid white;
-    padding: 1rem;
-    display: flex;
-    transition: all 0.3s ease;
+    list-style-type: none;
 
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0.5rem;
-    justify-content: center;
+    figure {
+      margin: 1rem;
+      border: 1px solid white;
+      padding: 2rem;
+      display: flex;
+      transition: all 0.3s ease;
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.4);
-    }
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0.5rem;
+      justify-content: center;
 
-    img {
-      width: 35%;
-    }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
 
-    h3 {
-      text-align: center;
+      figure {
+        align-items: center;
+      }
+
+      img {
+        width: 40%;
+        padding: 1rem;
+      }
+
+      figcaption {
+        font-size: 1.25rem;
+        text-align: center;
+        font-weight: 500;
+      }
     }
   }
 }
