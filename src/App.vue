@@ -38,14 +38,16 @@
 </template>
 
 <style lang="scss">
+a,
+svg,
 html,
-body,
-svg {
+body{
   color: white;
   margin: 0;
   padding: 0;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 h2 {
@@ -85,8 +87,6 @@ header {
 
     font-size: 1rem;
     font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
 
     &:hover {
       color: #880000;

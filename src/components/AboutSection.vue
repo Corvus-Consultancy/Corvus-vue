@@ -4,43 +4,88 @@
 
     <ul>
       <li>
-        <figure>
-          <img src="@/assets/about/raphael.jpg" />
-          <figcaption>Raphael Kurun</figcaption>
-          <span>Big Boss</span>
-        </figure>
+        <a
+          href="https://www.linkedin.com/in/raphael-kurun-776766161"
+          alt="A link to Raphael Kurun's LinkedIn profile"
+        >
+          <figure>
+            <img
+              src="@/assets/about/raphael_kurun.png"
+              alt="A picture of Raphael Kurun"
+              title="Raphael Kurun"
+            />
+            <figcaption>Raphael Kurun</figcaption>
+            <span>Big Boss</span>
+          </figure>
+        </a>
       </li>
 
       <li>
-        <figure>
-          <img src="@/assets/about/raphael.jpg" />
-          <figcaption>Javier Dobarco</figcaption>
-          <span>Big Boss</span>
-        </figure>
+        <a
+          href="https://www.linkedin.com/in/javierdobarco"
+          alt="A link to Benjamin Torrens LinkedIn profile"
+        >
+          <figure>
+            <img
+              src="@/assets/about/benjamin_torrens.png"
+              alt="A picture of Benjamin Torrens"
+              title="Benjamin Torrens"
+            />
+            <figcaption>Benjamin Torrens</figcaption>
+            <span>Big Boss</span>
+          </figure>
+        </a>
       </li>
 
       <li>
-        <figure>
-          <img src="@/assets/about/raphael.jpg" />
-          <figcaption>Ralfs Grauss</figcaption>
-          <span>Big Boss</span>
-        </figure>
+        <a
+          href="https://www.linkedin.com/in/benjamin-torrens-eixeres-a24008234"
+          alt="A link to Javier Dobarco LinkedIn profile"
+        >
+          <figure>
+            <img
+              src="@/assets/about/javier_dobarco.png"
+              alt="A picture of Javier Dobarco"
+              title="Javier Dobarco"
+            />
+            <figcaption>Javier Dobarco</figcaption>
+            <span>Big Boss</span>
+          </figure>
+        </a>
       </li>
 
       <li>
-        <figure>
-          <img src="@/assets/about/raphael.jpg" />
-          <figcaption>Rick Taylor</figcaption>
-          <span>Big Boss</span>
-        </figure>
+        <a
+          href="https://www.linkedin.com/in/rick-louis-micha%C3%ABl-taylor"
+          alt="A link to Ralfs Grauss LinkedIn profile"
+        >
+          <figure>
+            <img
+              src="@/assets/about/ralfs_grauss.png"
+              alt="A picture of Ralfs Grauss"
+              title="Ralfs Grauss"
+            />
+            <figcaption>Ralfs Grauss</figcaption>
+            <span>Big Boss</span>
+          </figure>
+        </a>
       </li>
 
       <li>
-        <figure>
-          <img src="@/assets/about/raphael.jpg" />
-          <figcaption>Benjamin Torrens</figcaption>
-          <span>Big Boss</span>
-        </figure>
+        <a
+          href="https://www.linkedin.com/in/ralfs-eduards-grauss-4278b21b2"
+          alt="A link to Rick Taylor LinkedIn profile"
+        >
+          <figure>
+            <img
+              src="@/assets/about/rick_taylor.png"
+              alt="A picture of Rick Taylor"
+              title="Rick Taylor"
+            />
+            <figcaption>Rick Taylor</figcaption>
+            <span>Big Boss</span>
+          </figure>
+        </a>
       </li>
     </ul>
   </section>
