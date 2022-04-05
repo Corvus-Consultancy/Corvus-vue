@@ -15,7 +15,7 @@
               title="Raphael Kurun"
             />
             <figcaption>Raphael Kurun</figcaption>
-            <span>Big Boss</span>
+            <span>Strategy consulting</span>
           </figure>
         </a>
       </li>
@@ -32,7 +32,7 @@
               title="Benjamin Torrens"
             />
             <figcaption>Benjamin Torrens</figcaption>
-            <span>Big Boss</span>
+            <span>Marketing and branding</span>
           </figure>
         </a>
       </li>
@@ -49,7 +49,7 @@
               title="Javier Dobarco"
             />
             <figcaption>Javier Dobarco</figcaption>
-            <span>Big Boss</span>
+            <span>Process and project management</span>
           </figure>
         </a>
       </li>
@@ -66,7 +66,7 @@
               title="Ralfs Grauss"
             />
             <figcaption>Ralfs Grauss</figcaption>
-            <span>Big Boss</span>
+            <span>Finance and crypto investments</span>
           </figure>
         </a>
       </li>
@@ -83,7 +83,7 @@
               title="Rick Taylor"
             />
             <figcaption>Rick Taylor</figcaption>
-            <span>Big Boss</span>
+            <span>IT solutions and infrastructure</span>
           </figure>
         </a>
       </li>
