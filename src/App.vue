@@ -41,7 +41,7 @@
 a,
 svg,
 html,
-body{
+body {
   color: white;
   margin: 0;
   padding: 0;
