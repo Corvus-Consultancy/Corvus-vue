@@ -34,7 +34,12 @@ form {
 
   div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
+    &:last-of-type {
+      flex-direction: row;
+    }
   }
 
   input,
@@ -68,7 +73,6 @@ form {
   }
 
   textarea {
-    width: 100%;
     margin: 1rem;
     height: 160px;
   }
@@ -76,6 +80,14 @@ form {
   .invalid {
     color: #880000;
     border-color: #880000;
+  }
+}
+
+@media (min-width: 1436px) {
+  form {
+    div {
+      flex-direction: row;
+    }
   }
 }
 </style>

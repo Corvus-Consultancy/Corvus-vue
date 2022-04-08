@@ -2,7 +2,6 @@
   <section id="services">
     <h2>Services</h2>
 
-    <!-- <div class="services-row"> -->
     <ul>
       <li>
         <figure>
@@ -78,14 +77,21 @@ ul {
   width: 100%;
   padding: 0;
   display: flex;
+
   flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
 
   li {
-    width: 33.33%;
-    list-style-type: none;
+    width: 100%;
+    padding: 1rem;
+
+    min-height: 30%;
+    box-sizing: border-box;
 
     figure {
-      margin: 1rem;
+      margin: 0;
+      height: 100%;
       border: 1px solid white;
       padding: 2rem;
       display: flex;
@@ -93,6 +99,7 @@ ul {
 
       box-sizing: border-box;
       flex-direction: column;
+
       align-items: center;
       border-radius: 0.5rem;
       justify-content: center;
@@ -115,6 +122,22 @@ ul {
         text-align: center;
         font-weight: 500;
       }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  ul {
+    li {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  ul {
+    li {
+      width: 33.33%;
     }
   }
 }

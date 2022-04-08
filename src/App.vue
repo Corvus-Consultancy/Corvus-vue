@@ -144,7 +144,7 @@ header {
 
 .button {
   color: #fff;
-  width: 30%;
+  width: 100%;
   margin: 1rem;
   height: 50px;
   border: none;
@@ -227,6 +227,12 @@ header {
         height: 100%;
       }
     }
+  }
+}
+
+@media (min-width: 1436px) {
+  .button {
+    width: 30%;
   }
 }
 </style>
