@@ -8,11 +8,11 @@
 
 <script>
 // @ is an alias to /src
-import HomeSection from "@/components/HomeSection.vue";
-import AboutSection from "@/components/AboutSection.vue";
-import ProjectSection from "@/components/ProjectSection.vue";
-import ServiceSection from "@/components/ServiceSection.vue";
-import ContactSection from "@/components/ContactSection.vue";
+import HomeSection from "@/components/templates/HomeSection.vue";
+import AboutSection from "@/components/templates/AboutSection.vue";
+import ProjectSection from "@/components/templates/ProjectSection.vue";
+import ServiceSection from "@/components/templates/ServiceSection.vue";
+import ContactSection from "@/components/templates/ContactSection.vue";
 
 export default {
   name: "Home",

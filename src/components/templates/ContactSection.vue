@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import Loader from "./Loader.vue";
+import Loader from "@/components/organisms/Loader.vue";
 
 const DOMAIN = process.env.VUE_APP_DOMAIN;
 const METHOD = process.env.VUE_APP_METHOD;
@@ -94,7 +94,7 @@ export default {
       },
       failure: false,
       success: false,
-      loading: false,
+      loading: true,
     };
   },
 
