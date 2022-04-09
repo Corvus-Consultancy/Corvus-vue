@@ -98,6 +98,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
 ul {
   width: 100%;
   padding: 0;
@@ -114,6 +119,18 @@ ul {
 
     min-height: 30%;
     box-sizing: border-box;
+
+    @media screen and (min-width: $screen-sm-min) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      width: 33.33%;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      width: 20%;
+    }
 
     figure {
       margin: 0;
@@ -149,30 +166,6 @@ ul {
           border: 5px solid #880000;
         }
       }
-    }
-  }
-}
-
-@media (min-width: 480px) {
-  ul {
-    li {
-      width: 50%;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  ul {
-    li {
-      width: 33.33%;
-    }
-  }
-}
-
-@media (min-width: 1436px) {
-  ul {
-    li {
-      width: 20%;
     }
   }
 }

@@ -20,12 +20,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
 h1 {
   color: #fff;
   margin: 0;
   display: flex;
 
-  font-size: 8rem;
+  font-size: 5rem;
   text-align: center;
   flex-direction: column;
 

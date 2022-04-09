@@ -38,6 +38,11 @@
 </template>
 
 <style lang="scss">
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
 a,
 svg,
 html,
@@ -107,11 +112,18 @@ header {
       justify-content: center;
 
       li {
+        display: none;
+
         &:first-of-type {
+          display: block;
           margin-right: auto;
         }
         &:last-of-type {
           margin-right: auto;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+          display: block;
         }
       }
     }
@@ -134,7 +146,7 @@ header {
 #services,
 #projects {
   width: 80vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   padding: 0 10vw;
   flex-direction: column;
@@ -233,6 +245,26 @@ header {
 @media (min-width: 1436px) {
   .button {
     width: 30%;
+  }
+}
+
+html {
+  font-size: 3vw;
+
+  @media screen and (min-width: $screen-sm-min) {
+    font-size: 2.5vw;
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    font-size: 2vw;
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    font-size: 1.5vw;
+  }
+
+  @media screen and (min-width: $screen-xl-min) {
+    font-size: 1vw;
   }
 }
 </style>

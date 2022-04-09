@@ -29,6 +29,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
 form {
   width: 100%;
 
@@ -36,6 +41,10 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media screen and (min-width: $screen-lg-min) {
+      flex-direction: row;
+    }
 
     &:last-of-type {
       flex-direction: row;
@@ -83,11 +92,11 @@ form {
   }
 }
 
-@media (min-width: 1436px) {
-  form {
-    div {
-      flex-direction: row;
-    }
-  }
-}
+// @media (min-width: 1436px) {
+//   form {
+//     div {
+//       flex-direction: row;
+//     }
+//   }
+// }
 </style>

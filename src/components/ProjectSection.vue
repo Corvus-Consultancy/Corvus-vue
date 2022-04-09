@@ -3,9 +3,11 @@
     <h2>Projects</h2>
 
     <div class="projects">
-      <a href="#">
-        <font-awesome-icon icon="angle-left" />
-      </a>
+      <!--
+        <a href="#">
+          <font-awesome-icon icon="angle-left" />
+        </a>
+      -->
 
       <section class="project">
         <img src="@/assets/zonneveranda.png" />
@@ -23,9 +25,11 @@
         </div>
       </section>
 
-      <a href="#">
-        <font-awesome-icon icon="angle-right" />
-      </a>
+      <!--
+        <a href="#">
+          <font-awesome-icon icon="angle-right" />
+        </a>
+      -->
     </div>
   </section>
 </template>
@@ -37,6 +41,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
 .projects {
   width: 100%;
   display: flex;
@@ -49,10 +58,12 @@ export default {
 
   .project {
     display: flex;
+    flex-direction: column;
 
     img {
       align-self: center;
-      margin-right: 3rem;
+      margin-right: 0;
+      margin-bottom: 3rem;
     }
 
     h3 {
@@ -64,6 +75,15 @@ export default {
     div {
       display: flex;
       flex-direction: column;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+      flex-direction: row;
+
+      img {
+        margin-right: 3rem;
+        margin-bottom: 0;
+      }
     }
   }
 }
