@@ -98,11 +98,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
-
 ul {
   width: 100%;
   padding: 0;

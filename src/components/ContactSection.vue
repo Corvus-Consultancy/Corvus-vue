@@ -99,16 +99,16 @@ export default {
   },
 
   watch: {
-    "data.email" () {
+    "data.email"() {
       this.error.email = false;
     },
-    "data.phone" () {
+    "data.phone"() {
       this.error.phone = false;
     },
-    "data.name" () {
+    "data.name"() {
       this.error.name = false;
     },
-    "data.message" () {
+    "data.message"() {
       this.error.message = false;
     },
   },
@@ -117,7 +117,7 @@ export default {
     async addContact() {
       this.success = false;
       this.failure = false;
-      
+
       if (this.loading) return;
 
       this.error.email =
@@ -186,11 +186,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
-
 form {
   width: 100%;
 
@@ -213,7 +208,7 @@ form {
     flex: 1;
     resize: none;
     color: white;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
     height: 50px;
     border: none;
     outline: none;
@@ -260,7 +255,7 @@ form {
 
   .success {
     color: #155724;
-      border-color: #c3e6cb;
+    border-color: #c3e6cb;
     background-color: #d4edda;
   }
 

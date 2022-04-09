@@ -20,11 +20,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
-
 h1 {
   color: #fff;
   margin: 0;
