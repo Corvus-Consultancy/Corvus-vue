@@ -35,6 +35,8 @@
   </header>
 
   <router-view />
+
+  <notifications />
 </template>
 
 <style lang="scss">

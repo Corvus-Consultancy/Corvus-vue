@@ -6,21 +6,24 @@
       <div>
         <input
           v-model="data.name"
-          v-bind:class="{ invalid: error.name }"
+          :class="{ invalid: error.name }"
+          :disabled="loading"
           type="text"
           name="name"
           placeholder="Your name"
         />
         <input
           v-model="data.email"
-          v-bind:class="{ invalid: error.email }"
+          :class="{ invalid: error.email }"
+          :disabled="loading"
           type="email"
           name="email"
           placeholder="Your email"
         />
         <input
           v-model="data.phone"
-          v-bind:class="{ invalid: error.phone }"
+          :class="{ invalid: error.phone }"
+          :disabled="loading"
           type="phone"
           name="phone"
           placeholder="Your phone number"
@@ -30,7 +33,8 @@
       <div>
         <textarea
           v-model="data.message"
-          v-bind:class="{ invalid: error.message }"
+          :class="{ invalid: error.message }"
+          :disabled="loading"
           name="message"
           placeholder="Message"
         ></textarea>
@@ -39,17 +43,25 @@
       <div>
         <button class="button" type="submit">
           <span>
-
             <template v-if="loading">
               <loader />
             </template>
 
-            <template v-else>
-              Send us a message
-            </template>
-
+            <template v-else> Send us a message </template>
           </span>
         </button>
+      </div>
+
+      <div>
+        <em v-if="success" class="success"
+          >We've received your message and we'll get back to you as fast as
+          possible!</em
+        >
+
+        <em v-if="failure" class="failure"
+          >Something went wrong, please try to contact us through our phone
+          number</em
+        >
       </div>
     </form>
   </section>
@@ -87,21 +99,25 @@ export default {
 
   watch: {
     "data.email"(value) {
-      this.error.email = this.invalidEmail(value) || this.invalidVarchar(value);
+      if (this.error.email)
+        this.error.email =
+          this.invalidEmail(value) || this.invalidVarchar(value);
     },
     "data.phone"(value) {
-      this.error.phone = this.invalidVarchar(value);
+      if (this.error.phone) this.error.phone = this.invalidVarchar(value);
     },
     "data.name"(value) {
-      this.error.name = this.invalidVarchar(value);
+      if (this.error.name) this.error.name = this.invalidVarchar(value);
     },
     "data.message"(value) {
-      this.error.message = this.invalidVarchar(value);
+      if (this.error.message) this.error.message = this.invalidVarchar(value);
     },
   },
 
   methods: {
     async addContact() {
+      if (this.loading) return;
+      
       this.error.email =
         this.invalidEmail(this.data.email) ||
         this.invalidVarchar(this.data.email);
@@ -119,9 +135,11 @@ export default {
         return;
       }
 
+      this.loading = true;
+
       const body = JSON.stringify(this.data);
       const method = "POST";
-      const headers = { 'Content-Type': 'application/json' };
+      const headers = { "Content-Type": "application/json" };
 
       const response = await fetch(`${METHOD}://${DOMAIN}/${VERSION}/contact`, {
         method,
@@ -131,8 +149,16 @@ export default {
 
       if (response.ok) {
         this.success = true;
+        this.failure = false;
         this.loading = false;
+        this.data = {
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        }
       } else {
+        this.success = false;
         this.failure = true;
         this.loading = false;
       }
@@ -221,6 +247,37 @@ form {
   .invalid {
     color: #880000;
     border-color: #880000;
+  }
+
+  .success,
+  .failure {
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 1rem;
+    flex: 1;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0.25rem;
+  }
+
+  .success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+
+  .failure {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
   }
 }
 </style>
