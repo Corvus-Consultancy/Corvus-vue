@@ -159,7 +159,7 @@ header {
 .button {
   color: #fff;
   width: 100%;
-  margin: 1rem;
+  margin: 1rem 0;
   height: 50px;
   border: none;
   padding: 0;

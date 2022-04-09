@@ -117,7 +117,7 @@ export default {
   methods: {
     async addContact() {
       if (this.loading) return;
-      
+
       this.error.email =
         this.invalidEmail(this.data.email) ||
         this.invalidVarchar(this.data.email);
@@ -156,7 +156,7 @@ export default {
           email: "",
           phone: "",
           message: "",
-        }
+        };
       } else {
         this.success = false;
         this.failure = true;
@@ -213,7 +213,7 @@ form {
   textarea {
     flex: 1;
     color: white;
-    margin: 1rem;
+    margin: 1rem 0;
     height: 50px;
     border: none;
     outline: none;
@@ -240,7 +240,7 @@ form {
   }
 
   textarea {
-    margin: 1rem;
+    // margin: 1rem;
     height: 160px;
   }
 
