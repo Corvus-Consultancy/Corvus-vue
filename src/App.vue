@@ -55,6 +55,7 @@ body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 h2 {
