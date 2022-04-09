@@ -94,7 +94,7 @@ export default {
       },
       failure: false,
       success: false,
-      loading: true,
+      loading: false,
     };
   },
 
