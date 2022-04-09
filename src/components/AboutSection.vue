@@ -10,7 +10,7 @@
         >
           <figure>
             <img
-              src="@/assets/about/raphael_kurun.png"
+              src="@/assets/about/raphael_kurun.webp"
               alt="A picture of Raphael Kurun"
               title="Raphael Kurun"
             />
@@ -27,7 +27,7 @@
         >
           <figure>
             <img
-              src="@/assets/about/benjamin_torrens.png"
+              src="@/assets/about/benjamin_torrens.webp"
               alt="A picture of Benjamin Torrens"
               title="Benjamin Torrens"
             />
@@ -44,7 +44,7 @@
         >
           <figure>
             <img
-              src="@/assets/about/javier_dobarco.png"
+              src="@/assets/about/javier_dobarco.webp"
               alt="A picture of Javier Dobarco"
               title="Javier Dobarco"
             />
@@ -61,7 +61,7 @@
         >
           <figure>
             <img
-              src="@/assets/about/ralfs_grauss.png"
+              src="@/assets/about/ralfs_grauss.webp"
               alt="A picture of Ralfs Grauss"
               title="Ralfs Grauss"
             />
@@ -78,7 +78,7 @@
         >
           <figure>
             <img
-              src="@/assets/about/rick_taylor.png"
+              src="@/assets/about/rick_taylor.webp"
               alt="A picture of Rick Taylor"
               title="Rick Taylor"
             />

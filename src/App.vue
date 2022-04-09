@@ -6,7 +6,7 @@
       <ol>
         <li>
           <a href="#home">
-            <img src="@/assets/logo.png" width="180" />
+            <img src="@/assets/logo.webp" width="180" />
           </a>
         </li>
 
@@ -74,7 +74,7 @@ h2 {
 
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("~@/assets/hero.png");
+    url("~@/assets/hero.webp");
   background-position: center;
 }
 

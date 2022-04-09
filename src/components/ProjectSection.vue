@@ -10,7 +10,7 @@
       -->
 
       <section class="project">
-        <img src="@/assets/zonneveranda.png" />
+        <img src="@/assets/projects/zonneveranda.webp" />
 
         <div>
           <h3>Zonneveranda</h3>
