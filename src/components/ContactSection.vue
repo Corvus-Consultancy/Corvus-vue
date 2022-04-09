@@ -16,7 +16,7 @@
           v-model="data.email"
           :class="{ invalid: error.email }"
           :disabled="loading"
-          type="email"
+          type="text"
           name="email"
           placeholder="Your email"
         />
@@ -35,6 +35,7 @@
           v-model="data.message"
           :class="{ invalid: error.message }"
           :disabled="loading"
+          rows="4"
           name="message"
           placeholder="Message"
         ></textarea>
@@ -98,24 +99,25 @@ export default {
   },
 
   watch: {
-    "data.email"(value) {
-      if (this.error.email)
-        this.error.email =
-          this.invalidEmail(value) || this.invalidVarchar(value);
+    "data.email" () {
+      this.error.email = false;
     },
-    "data.phone"(value) {
-      if (this.error.phone) this.error.phone = this.invalidVarchar(value);
+    "data.phone" () {
+      this.error.phone = false;
     },
-    "data.name"(value) {
-      if (this.error.name) this.error.name = this.invalidVarchar(value);
+    "data.name" () {
+      this.error.name = false;
     },
-    "data.message"(value) {
-      if (this.error.message) this.error.message = this.invalidVarchar(value);
+    "data.message" () {
+      this.error.message = false;
     },
   },
 
   methods: {
     async addContact() {
+      this.success = false;
+      this.failure = false;
+      
       if (this.loading) return;
 
       this.error.email =
@@ -148,20 +150,17 @@ export default {
       });
 
       if (response.ok) {
-        this.success = true;
-        this.failure = false;
-        this.loading = false;
         this.data = {
           name: "",
           email: "",
           phone: "",
           message: "",
         };
-      } else {
-        this.success = false;
-        this.failure = true;
-        this.loading = false;
       }
+
+      this.loading = false;
+      this.success = response.ok;
+      this.failure = !response.ok;
     },
 
     invalidEmail(value) {
@@ -212,12 +211,13 @@ form {
   input,
   textarea {
     flex: 1;
+    resize: none;
     color: white;
-    margin: 1rem 0;
+    margin: .75rem 0;
     height: 50px;
     border: none;
     outline: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     background: transparent;
     transition: all 0.3s ease;
 
@@ -226,8 +226,9 @@ form {
     font-family: inherit;
     border-bottom: 2px solid white;
 
+    &:focus,
     &:hover {
-      border-color: #880000;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     }
 
     &:placeholder {
@@ -240,44 +241,33 @@ form {
   }
 
   textarea {
-    // margin: 1rem;
     height: 160px;
   }
 
   .invalid {
-    color: #880000;
     border-color: #880000;
   }
 
   .success,
   .failure {
-    font-style: normal;
-    box-sizing: border-box;
-    margin: 1rem;
-    flex: 1;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    position: relative;
+    margin: 1rem 0;
     padding: 0.75rem 1.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+    font-style: normal;
+
+    border: transparent solid 1px;
     border-radius: 0.25rem;
   }
 
   .success {
     color: #155724;
+      border-color: #c3e6cb;
     background-color: #d4edda;
-    border-color: #c3e6cb;
   }
 
   .failure {
     color: #721c24;
-    background-color: #f8d7da;
     border-color: #f5c6cb;
+    background-color: #f8d7da;
   }
 }
 </style>
