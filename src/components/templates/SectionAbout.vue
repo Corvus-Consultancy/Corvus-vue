@@ -5,6 +5,8 @@
     <ul>
       <li>
         <a
+          @click="$plausible.trackEvent('Raphael Kurun clicked')"
+          target="_blank"
           href="https://www.linkedin.com/in/raphael-kurun-776766161"
           alt="A link to Raphael Kurun's LinkedIn profile"
         >
@@ -22,6 +24,8 @@
 
       <li>
         <a
+          @click="$plausible.trackEvent('Benjamin Torrens clicked')"
+          target="_blank"
           href="https://www.linkedin.com/in/javierdobarco"
           alt="A link to Benjamin Torrens LinkedIn profile"
         >
@@ -39,6 +43,8 @@
 
       <li>
         <a
+          @click="$plausible.trackEvent('Javier Dobarco clicked')"
+          target="_blank"
           href="https://www.linkedin.com/in/benjamin-torrens-eixeres-a24008234"
           alt="A link to Javier Dobarco LinkedIn profile"
         >
@@ -56,6 +62,8 @@
 
       <li>
         <a
+          @click="$plausible.trackEvent('Ralfs Grauss clicked')"
+          target="_blank"
           href="https://www.linkedin.com/in/rick-louis-micha%C3%ABl-taylor"
           alt="A link to Ralfs Grauss LinkedIn profile"
         >
@@ -73,6 +81,8 @@
 
       <li>
         <a
+          @click="$plausible.trackEvent('Rick Taylor clicked')"
+          target="_blank"
           href="https://www.linkedin.com/in/ralfs-eduards-grauss-4278b21b2"
           alt="A link to Rick Taylor LinkedIn profile"
         >

@@ -131,6 +131,8 @@ export default {
 
       this.loading = true;
 
+      this.$plausible.trackEvent("Contact form submitted");
+
       const body = JSON.stringify(this.data);
       const method = "POST";
       const headers = { "Content-Type": "application/json" };
