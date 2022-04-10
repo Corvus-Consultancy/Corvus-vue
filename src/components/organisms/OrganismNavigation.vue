@@ -5,11 +5,11 @@
         <li>
           <a href="#home">
             <img
-              src="@/assets/logo.webp"
+              src="@/assets/logo.svg"
               alt="The logo of Corvus Consultancy"
               title="Corvus Consultancy"
-              width="250"
-              height="106"
+              width="205.32"
+              height="330.72"
             />
           </a>
         </li>
@@ -32,10 +32,12 @@
       </ol>
     </nav>
 
-    <address>
-      <font-awesome-icon icon="phone" />
-      <a href="tel:0630222522">0630222522</a>
-    </address>
+    <a href="tel:0630222522">
+      <address>
+        <font-awesome-icon icon="phone" />
+        0630222522
+      </address>
+    </a>
   </header>
 </template>
 
@@ -47,7 +49,7 @@ export default {
 
 <style scoped lang="scss">
 header {
-  top: 1rem;
+  top: 3rem;
   left: 10vw;
   right: 10vw;
 
@@ -74,7 +76,7 @@ header {
     }
 
     img {
-      width: 75%;
+      width: 100%;
       height: auto;
     }
   }
@@ -96,14 +98,20 @@ header {
         display: none;
 
         &:first-of-type {
+          width: 10%;
           display: block;
           margin-right: auto;
+
+          @media screen and (min-width: $screen-md-min) {
+            width: 5%;
+          }
         }
+
         &:last-of-type {
           margin-right: auto;
         }
 
-        @media screen and (min-width: $screen-xl-min) {
+        @media screen and (min-width: $screen-md-min) {
           display: block;
         }
       }
@@ -115,6 +123,7 @@ header {
     align-items: center;
 
     svg {
+      color: inherit;
       font-size: 0.8rem;
       padding-right: 0.8rem;
     }

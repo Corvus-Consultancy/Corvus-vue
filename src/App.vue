@@ -44,11 +44,12 @@ body {
 #services,
 #projects {
   width: 80vw;
-  min-height: 100vh;
   display: flex;
   padding: 0 10vw;
-  flex-direction: column;
+
+  min-height: 100vh;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 
   h2 {
@@ -59,7 +60,7 @@ body {
 
   @media screen and (min-width: $screen-xl-min) {
     width: 60vw;
-  padding: 0 20vw;
+    padding: 0 20vw;
   }
 }
 
@@ -71,11 +72,7 @@ html {
   }
 
   @media screen and (min-width: $screen-md-min) {
-    font-size: 2vw;
-  }
-
-  @media screen and (min-width: $screen-lg-min) {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
   }
 
   @media screen and (min-width: $screen-xl-min) {

@@ -10,34 +10,33 @@
       -->
 
       <li>
-      <article>
-        <img
-          src="@/assets/projects/zonneveranda.webp"
-          alt="The logo of ZonneVeranda"
-          title="ZonneVeranda"
-          width="140"
-          height="123"
-        />
+        <article>
+          <img
+            src="@/assets/projects/zonneveranda.webp"
+            alt="The logo of ZonneVeranda"
+            title="ZonneVeranda"
+            width="140"
+            height="123"
+          />
 
-        <div>
-          <h3>ZonneVeranda</h3>
-          <p>
-            ZonneVeranda reached out to us to create promotion material for an
-            unexpected opportunity to present themselves at a fair. This fair
-            however, was taking place within two days of us hearing about the
-            project. Considering the prompt nature of the assignment, we
-            allocated our time and managed to create an array of captivating
-            designs within the same day.
-          </p>
-        </div>
-      </article>
+          <div>
+            <h3>ZonneVeranda</h3>
+            <p>
+              ZonneVeranda reached out to us to create promotion material for an
+              unexpected opportunity to present themselves at a fair. This fair
+              however, was taking place within two days of us hearing about the
+              project. Considering the prompt nature of the assignment, we
+              allocated our time and managed to create an array of captivating
+              designs within the same day.
+            </p>
+          </div>
+        </article>
 
-      <!--
+        <!--
         <a href="#">
           <font-awesome-icon icon="angle-right" />
         </a>
-      -->
-      </li>
+      --></li>
     </ul>
   </section>
 </template>
