@@ -4,8 +4,6 @@
   <navigation />
 
   <router-view />
-
-  <notifications />
 </template>
 
 <script>
