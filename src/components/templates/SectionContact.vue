@@ -26,7 +26,7 @@
           v-model="data.phone"
           :class="{ invalid: error.phone }"
           :disabled="loading"
-          type="type"
+          type="text"
           name="phone"
           maxlength="255"
           placeholder="Your phone number"
