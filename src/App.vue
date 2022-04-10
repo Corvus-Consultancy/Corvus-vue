@@ -17,6 +17,10 @@ export default {
     OrganismBackground,
     OrganismNavigation,
   },
+
+  mounted() {
+    this.$plausible.trackPageview();
+  },
 };
 </script>
 
