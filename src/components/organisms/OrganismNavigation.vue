@@ -98,12 +98,20 @@ header {
         display: none;
 
         &:first-of-type {
-          width: 10%;
+          width: 20%;
           display: block;
           margin-right: auto;
 
+          @media screen and (min-width: $screen-sm-min) {
+            width: 10%;
+          }
+
           @media screen and (min-width: $screen-md-min) {
             width: 5%;
+          }
+
+          @media screen and (min-width: $screen-lg-min) {
+            width: 4%;
           }
         }
 
