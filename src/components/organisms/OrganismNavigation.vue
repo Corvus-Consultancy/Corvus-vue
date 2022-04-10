@@ -8,8 +8,8 @@
               src="@/assets/logo.svg"
               alt="The logo of Corvus Consultancy"
               title="Corvus Consultancy"
-              width="205.32"
-              height="330.72"
+              width="205"
+              height="331"
             />
           </a>
         </li>
