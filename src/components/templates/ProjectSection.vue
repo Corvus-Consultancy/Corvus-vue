@@ -10,10 +10,14 @@
       -->
 
       <section class="project">
-        <img src="@/assets/projects/zonneveranda.webp" />
+        <img
+          src="@/assets/projects/zonneveranda.webp"
+          alt="The logo of ZonneVeranda"
+          title="ZonneVeranda"
+        />
 
         <div>
-          <h3>Zonneveranda</h3>
+          <h3>ZonneVeranda</h3>
           <p>
             ZonneVeranda reached out to us to create promotion material for an
             unexpected opportunity to present themselves at a fair. This fair

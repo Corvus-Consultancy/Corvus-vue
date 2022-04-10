@@ -5,42 +5,66 @@
     <ul>
       <li>
         <figure>
-          <img :src="consulting" />
+          <img
+            src="@/assets/services/consulting.svg"
+            alt="An icon representing Strategic consulting"
+            title="Strategic consulting"
+          />
           <figcaption>Strategic consulting</figcaption>
         </figure>
       </li>
 
       <li>
         <figure>
-          <img :src="management" />
+          <img
+            src="@/assets/services/management.svg"
+            alt="An icon representing Management of Projects & Services"
+            title="Management of Projects & Services"
+          />
           <figcaption>Management of Projects & Services</figcaption>
         </figure>
       </li>
 
       <li>
         <figure>
-          <img :src="crypto" />
+          <img
+            src="@/assets/services/crypto.svg"
+            alt="An icon representing Cryptocurrency investments"
+            title="Cryptocurrency investments"
+          />
           <figcaption>Cryptocurrency investments</figcaption>
         </figure>
       </li>
 
       <li>
         <figure>
-          <img :src="research" />
+          <img
+            src="@/assets/services/research.svg"
+            alt="An icon representing In-depth research"
+            title="In-depth research"
+          />
           <figcaption>In-depth research</figcaption>
         </figure>
       </li>
 
       <li>
         <figure>
-          <img :src="creation" />
+          <img
+            src="@/assets/services/creation.svg"
+            alt="An icon representing Creation of your original content"
+            title="Creation of your original content"
+          />
           <figcaption>Creation of your original content</figcaption>
         </figure>
       </li>
 
       <li>
         <figure>
-          <img :src="services" />
+          <img
+            src="@/assets/services/services.svg"
+            alt="An icon representing IT services"
+            title="IT services"
+          />
           <figcaption>IT services</figcaption>
         </figure>
       </li>
@@ -49,26 +73,8 @@
 </template>
 
 <script>
-import management from "@/assets/services/management.svg";
-import consulting from "@/assets/services/consulting.svg";
-import creation from "@/assets/services/creation.svg";
-import research from "@/assets/services/research.svg";
-import services from "@/assets/services/services.svg";
-import crypto from "@/assets/services/crypto.svg";
-
 export default {
   name: "ServiceSection",
-
-  setup() {
-    return {
-      management,
-      consulting,
-      creation,
-      research,
-      services,
-      crypto,
-    };
-  },
 };
 </script>
 

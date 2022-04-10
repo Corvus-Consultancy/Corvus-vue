@@ -4,7 +4,11 @@
       <ol>
         <li>
           <a href="#home">
-            <img src="@/assets/logo.webp" width="180" />
+            <img 
+              src="@/assets/logo.webp"
+              alt="The logo of Corvus Consultancy"
+              title="Corvus Consultancy"
+              />
           </a>
         </li>
 
