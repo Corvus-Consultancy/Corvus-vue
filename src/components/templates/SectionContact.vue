@@ -10,6 +10,7 @@
           :disabled="loading"
           type="text"
           name="name"
+          maxlength="255"
           placeholder="Your name"
         />
         <input
@@ -18,6 +19,7 @@
           :disabled="loading"
           type="text"
           name="email"
+          maxlength="255"
           placeholder="Your email"
         />
         <input
@@ -26,6 +28,7 @@
           :disabled="loading"
           type="phone"
           name="phone"
+          maxlength="255"
           placeholder="Your phone number"
         />
       </div>
@@ -37,6 +40,7 @@
           :disabled="loading"
           rows="4"
           name="message"
+          maxlength="4096"
           placeholder="Message"
         ></textarea>
       </div>
@@ -118,7 +122,7 @@ export default {
 
       this.error.name = this.invalidVarchar(this.data.name);
       this.error.phone = this.invalidVarchar(this.data.phone);
-      this.error.message = this.invalidVarchar(this.data.message);
+      this.error.message = this.invalidLarge(this.data.message);
 
       if (
         this.error.name ||
@@ -171,6 +175,12 @@ export default {
 
       return length < 3 || length > 255;
     },
+
+    invalidLarge(value) {
+      const length = value.length;
+
+      return length < 3 || length > 4096;   
+    }
   },
 
   components: {
