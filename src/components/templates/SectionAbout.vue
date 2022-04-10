@@ -15,6 +15,8 @@
               src="@/assets/about/raphael_kurun.webp"
               alt="A picture of Raphael Kurun"
               title="Raphael Kurun"
+              width="512"
+              height="512"
             />
             <h3>Raphael Kurun</h3>
             <span>Strategy consulting</span>
@@ -34,6 +36,8 @@
               src="@/assets/about/benjamin_torrens.webp"
               alt="A picture of Benjamin Torrens"
               title="Benjamin Torrens"
+              width="512"
+              height="512"
             />
             <h3>Benjamin Torrens</h3>
             <span>Marketing and branding</span>
@@ -53,6 +57,8 @@
               src="@/assets/about/javier_dobarco.webp"
               alt="A picture of Javier Dobarco"
               title="Javier Dobarco"
+              width="512"
+              height="512"
             />
             <h3>Javier Dobarco</h3>
             <span>Process and project management</span>
@@ -72,6 +78,8 @@
               src="@/assets/about/ralfs_grauss.webp"
               alt="A picture of Ralfs Grauss"
               title="Ralfs Grauss"
+              width="512"
+              height="512"
             />
             <h3>Ralfs Grauss</h3>
             <span>Finance and crypto investments</span>
@@ -91,6 +99,8 @@
               src="@/assets/about/rick_taylor.webp"
               alt="A picture of Rick Taylor"
               title="Rick Taylor"
+              width="512"
+              height="512"
             />
             <h3>Rick Taylor</h3>
             <span>IT solutions and infrastructure</span>
@@ -150,6 +160,7 @@ ul {
 
       img {
         width: 100%;
+        height: auto;
         border: 5px solid transparent;
         transition: all 0.3s ease;
 

@@ -15,6 +15,8 @@
           src="@/assets/projects/zonneveranda.webp"
           alt="The logo of ZonneVeranda"
           title="ZonneVeranda"
+          width="140"
+          height="123"
         />
 
         <div>

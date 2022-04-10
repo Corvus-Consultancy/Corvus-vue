@@ -9,6 +9,8 @@
             src="@/assets/services/consulting.svg"
             alt="An icon representing Strategic consulting"
             title="Strategic consulting"
+            width="24"
+            height="24"
           />
           <figcaption>Strategic consulting</figcaption>
         </figure>
@@ -20,6 +22,8 @@
             src="@/assets/services/management.svg"
             alt="An icon representing Management of Projects & Services"
             title="Management of Projects & Services"
+            width="24"
+            height="24"
           />
           <figcaption>Management of Projects & Services</figcaption>
         </figure>
@@ -31,6 +35,8 @@
             src="@/assets/services/crypto.svg"
             alt="An icon representing Cryptocurrency investments"
             title="Cryptocurrency investments"
+            width="24"
+            height="24"
           />
           <figcaption>Cryptocurrency investments</figcaption>
         </figure>
@@ -42,6 +48,8 @@
             src="@/assets/services/research.svg"
             alt="An icon representing In-depth research"
             title="In-depth research"
+            width="24"
+            height="24"
           />
           <figcaption>In-depth research</figcaption>
         </figure>
@@ -53,6 +61,8 @@
             src="@/assets/services/creation.svg"
             alt="An icon representing Creation of your original content"
             title="Creation of your original content"
+            width="24"
+            height="24"
           />
           <figcaption>Creation of your original content</figcaption>
         </figure>
@@ -64,6 +74,8 @@
             src="@/assets/services/services.svg"
             alt="An icon representing IT services"
             title="IT services"
+            width="24"
+            height="24"
           />
           <figcaption>IT services</figcaption>
         </figure>
@@ -128,6 +140,7 @@ ul {
 
       img {
         width: 40%;
+        height: auto;
         padding: 1rem;
       }
 

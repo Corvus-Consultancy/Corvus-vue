@@ -8,6 +8,8 @@
               src="@/assets/logo.webp"
               alt="The logo of Corvus Consultancy"
               title="Corvus Consultancy"
+              width="250"
+              height="106"
             />
           </a>
         </li>
@@ -69,6 +71,11 @@ header {
 
     &:hover {
       color: #880000;
+    }
+
+    img {
+      width: 75%;
+      height: auto;
     }
   }
 
