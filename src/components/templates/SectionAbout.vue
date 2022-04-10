@@ -10,15 +10,15 @@
           href="https://www.linkedin.com/in/raphael-kurun-776766161"
           alt="A link to Raphael Kurun's LinkedIn profile"
         >
-          <figure>
+          <article>
             <img
               src="@/assets/about/raphael_kurun.webp"
               alt="A picture of Raphael Kurun"
               title="Raphael Kurun"
             />
-            <figcaption>Raphael Kurun</figcaption>
+            <h3>Raphael Kurun</h3>
             <span>Strategy consulting</span>
-          </figure>
+          </article>
         </a>
       </li>
 
@@ -29,15 +29,15 @@
           href="https://www.linkedin.com/in/javierdobarco"
           alt="A link to Benjamin Torrens LinkedIn profile"
         >
-          <figure>
+          <article>
             <img
               src="@/assets/about/benjamin_torrens.webp"
               alt="A picture of Benjamin Torrens"
               title="Benjamin Torrens"
             />
-            <figcaption>Benjamin Torrens</figcaption>
+            <h3>Benjamin Torrens</h3>
             <span>Marketing and branding</span>
-          </figure>
+          </article>
         </a>
       </li>
 
@@ -48,15 +48,15 @@
           href="https://www.linkedin.com/in/benjamin-torrens-eixeres-a24008234"
           alt="A link to Javier Dobarco LinkedIn profile"
         >
-          <figure>
+          <article>
             <img
               src="@/assets/about/javier_dobarco.webp"
               alt="A picture of Javier Dobarco"
               title="Javier Dobarco"
             />
-            <figcaption>Javier Dobarco</figcaption>
+            <h3>Javier Dobarco</h3>
             <span>Process and project management</span>
-          </figure>
+          </article>
         </a>
       </li>
 
@@ -67,15 +67,15 @@
           href="https://www.linkedin.com/in/rick-louis-micha%C3%ABl-taylor"
           alt="A link to Ralfs Grauss LinkedIn profile"
         >
-          <figure>
+          <article>
             <img
               src="@/assets/about/ralfs_grauss.webp"
               alt="A picture of Ralfs Grauss"
               title="Ralfs Grauss"
             />
-            <figcaption>Ralfs Grauss</figcaption>
+            <h3>Ralfs Grauss</h3>
             <span>Finance and crypto investments</span>
-          </figure>
+          </article>
         </a>
       </li>
 
@@ -86,15 +86,15 @@
           href="https://www.linkedin.com/in/ralfs-eduards-grauss-4278b21b2"
           alt="A link to Rick Taylor LinkedIn profile"
         >
-          <figure>
+          <article>
             <img
               src="@/assets/about/rick_taylor.webp"
               alt="A picture of Rick Taylor"
               title="Rick Taylor"
             />
-            <figcaption>Rick Taylor</figcaption>
+            <h3>Rick Taylor</h3>
             <span>IT solutions and infrastructure</span>
-          </figure>
+          </article>
         </a>
       </li>
     </ul>
@@ -109,7 +109,7 @@ export default {
 
 <style scoped lang="scss">
 ul {
-  width: 100%;
+  margin: 0 -1rem;
   padding: 0;
   display: flex;
 
@@ -137,7 +137,7 @@ ul {
       width: 20%;
     }
 
-    figure {
+    article {
       margin: 0;
       height: 100%;
       border: 1px solid white;
@@ -157,7 +157,7 @@ ul {
         border-radius: 100%;
       }
 
-      figcaption {
+      h3 {
         font-size: 1.25rem;
         font-weight: 600;
         text-transform: uppercase;

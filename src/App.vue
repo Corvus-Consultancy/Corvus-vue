@@ -56,6 +56,11 @@ body {
     font-weight: 400;
     margin-bottom: 6rem;
   }
+
+  @media screen and (min-width: $screen-xl-min) {
+    width: 60vw;
+  padding: 0 20vw;
+  }
 }
 
 html {

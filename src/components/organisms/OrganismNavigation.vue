@@ -46,14 +46,19 @@ export default {
 <style scoped lang="scss">
 header {
   top: 1rem;
-  left: 6rem;
-  right: 6rem;
+  left: 10vw;
+  right: 10vw;
 
   display: flex;
   position: absolute;
 
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: $screen-md-min) {
+    left: 6rem;
+    right: 6rem;
+  }
 
   a {
     color: gray;
@@ -91,7 +96,7 @@ header {
           margin-right: auto;
         }
 
-        @media screen and (min-width: $screen-md-min) {
+        @media screen and (min-width: $screen-xl-min) {
           display: block;
         }
       }

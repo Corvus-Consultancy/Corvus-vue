@@ -30,7 +30,7 @@ a {
   font-family: inherit;
   text-decoration: none;
 
-  @media (min-width: 1436px) {
+  @media (min-width: $screen-md-min) {
     width: 30%;
   }
 

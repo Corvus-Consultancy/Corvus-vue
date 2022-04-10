@@ -32,8 +32,7 @@ export default {
 <style scoped lang="scss">
 button {
   color: #fff;
-  width: 100%;
-  margin: 1rem 0;
+  margin: 2rem 0rem;
   height: 50px;
   border: none;
   padding: 0;
@@ -43,10 +42,6 @@ button {
   font-size: inherit;
   font-family: inherit;
   text-decoration: none;
-
-  @media (min-width: 1436px) {
-    width: 30%;
-  }
 
   &:after,
   &:before {

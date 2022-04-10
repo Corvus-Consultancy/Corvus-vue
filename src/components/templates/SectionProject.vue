@@ -2,14 +2,15 @@
   <section id="projects">
     <h2>Projects</h2>
 
-    <div class="projects">
+    <ul>
       <!--
         <a href="#">
           <font-awesome-icon icon="angle-left" />
         </a>
       -->
 
-      <section class="project">
+      <li>
+      <article>
         <img
           src="@/assets/projects/zonneveranda.webp"
           alt="The logo of ZonneVeranda"
@@ -27,14 +28,15 @@
             designs within the same day.
           </p>
         </div>
-      </section>
+      </article>
 
       <!--
         <a href="#">
           <font-awesome-icon icon="angle-right" />
         </a>
       -->
-    </div>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -45,17 +47,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.projects {
-  width: 100%;
+ul {
+  margin: 0 -1rem;
   display: flex;
+  padding: 1rem;
   align-items: center;
+  list-style-type: none;
 
   svg {
     margin: 0 5rem;
     font-size: 1.5rem;
   }
 
-  .project {
+  article {
     display: flex;
     flex-direction: column;
 

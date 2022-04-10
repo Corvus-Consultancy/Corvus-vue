@@ -33,21 +33,17 @@
         />
       </div>
 
-      <div>
-        <textarea
-          v-model="data.message"
-          :class="{ invalid: error.message }"
-          :disabled="loading"
-          rows="4"
-          name="message"
-          maxlength="4096"
-          placeholder="Message"
-        ></textarea>
-      </div>
+      <textarea
+        v-model="data.message"
+        :class="{ invalid: error.message }"
+        :disabled="loading"
+        rows="4"
+        name="message"
+        maxlength="4096"
+        placeholder="Message"
+      ></textarea>
 
-      <div>
-        <organism-submit :content="'Send us a message'" :loading="loading" />
-      </div>
+      <organism-submit :content="'Send us a message'" :loading="loading" />
 
       <div>
         <em v-if="success" class="success"
@@ -179,8 +175,8 @@ export default {
     invalidLarge(value) {
       const length = value.length;
 
-      return length < 3 || length > 4096;   
-    }
+      return length < 3 || length > 4096;
+    },
   },
 
   components: {
@@ -192,11 +188,15 @@ export default {
 <style scoped lang="scss">
 form {
   width: 100%;
+  margin: 0 -1rem;
+  display: flex;
+  flex-direction: column;
 
   div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 -1rem;
 
     @media screen and (min-width: $screen-lg-min) {
       flex-direction: row;
@@ -210,9 +210,10 @@ form {
   input,
   textarea {
     flex: 1;
+    // width: 100%;
     resize: none;
     color: white;
-    margin: 0.75rem 0;
+    margin: 1rem 1rem;
     height: 50px;
     border: none;
     outline: none;
@@ -240,6 +241,7 @@ form {
   }
 
   textarea {
+    margin: 1rem 0;
     height: 160px;
   }
 
