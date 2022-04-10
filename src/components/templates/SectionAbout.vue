@@ -38,7 +38,7 @@
               height="512"
             />
             <h3>Benjamin Torrens</h3>
-            <span>Marketing and branding</span>
+            <span>Finance and crypto investments</span>
           </article>
         </a>
       </li>
@@ -58,7 +58,7 @@
               height="512"
             />
             <h3>Javier Dobarco</h3>
-            <span>Process and project management</span>
+            <span>Marketing and branding</span>
           </article>
         </a>
       </li>
@@ -78,7 +78,7 @@
               height="512"
             />
             <h3>Ralfs Grauss</h3>
-            <span>Finance and crypto investments</span>
+            <span>Process and project management</span>
           </article>
         </a>
       </li>
