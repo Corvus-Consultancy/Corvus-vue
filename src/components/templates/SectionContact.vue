@@ -85,7 +85,7 @@ export default {
         message: false,
       },
       failure: false,
-      success: false,
+      success: true,
       loading: false,
     };
   },
@@ -210,7 +210,6 @@ form {
   input,
   textarea {
     flex: 1;
-    // width: 100%;
     resize: none;
     color: white;
     margin: 1rem 1rem;
@@ -251,8 +250,10 @@ form {
 
   .success,
   .failure {
-    margin: 1rem 0;
+    width: 100%;
+    margin: 1rem;
     padding: 0.75rem 1.25rem;
+    font-size: inherit;
     font-style: normal;
 
     border: transparent solid 1px;
