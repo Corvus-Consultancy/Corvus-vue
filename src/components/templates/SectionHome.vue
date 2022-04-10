@@ -29,9 +29,13 @@ h1 {
   margin: 0;
   display: flex;
 
-  font-size: 5rem;
+  font-size: 3.5rem;
   text-align: center;
   flex-direction: column;
+
+  @media screen and (min-width: $screen-md-min) {
+    font-size: 5rem;
+  }
 
   span:first-of-type {
     font-weight: 500;
@@ -44,6 +48,7 @@ h1 {
 
 p {
   color: #fff;
+  text-align: center;
 
   font-size: 1.5rem;
   font-weight: 300;

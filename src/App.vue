@@ -46,8 +46,9 @@ body {
   width: 80vw;
   display: flex;
   padding: 0 10vw;
+  margin: 20vh 0;
 
-  min-height: 100vh;
+  min-height: 60vh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +66,7 @@ body {
 }
 
 html {
-  font-size: 3vw;
+  font-size: 4vw;
 
   @media screen and (min-width: $screen-sm-min) {
     font-size: 2.5vw;
@@ -76,7 +77,7 @@ html {
   }
 
   @media screen and (min-width: $screen-xl-min) {
-    font-size: 1vw;
+    font-size: 1.05vw;
   }
 }
 </style>

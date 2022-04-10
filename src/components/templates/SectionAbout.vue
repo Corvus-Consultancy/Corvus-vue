@@ -124,15 +124,11 @@ ul {
   justify-content: center;
 
   li {
-    width: 100%;
+    width: 50%;
     padding: 1rem;
 
     min-height: 30%;
     box-sizing: border-box;
-
-    @media screen and (min-width: $screen-sm-min) {
-      width: 50%;
-    }
 
     @media screen and (min-width: $screen-md-min) {
       width: 33.33%;

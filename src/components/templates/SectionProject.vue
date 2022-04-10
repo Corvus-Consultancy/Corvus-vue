@@ -62,6 +62,7 @@ ul {
 
   article {
     display: flex;
+    text-align: center;
     flex-direction: column;
 
     img {
@@ -82,6 +83,7 @@ ul {
     }
 
     @media screen and (min-width: $screen-sm-min) {
+      text-align: left;
       flex-direction: row;
 
       img {

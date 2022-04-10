@@ -68,7 +68,7 @@ header {
     color: gray;
     transition: all 0.3s ease;
 
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
 
     &:hover {

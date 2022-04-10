@@ -101,7 +101,7 @@ ul {
   list-style-type: none;
 
   li {
-    width: 100%;
+    width: 50%;
     padding: 1rem;
 
     min-height: 30%;
@@ -145,7 +145,7 @@ ul {
       }
 
       figcaption {
-        font-size: 1.25rem;
+        font-size: inherit;
         text-align: center;
         font-weight: 500;
       }
