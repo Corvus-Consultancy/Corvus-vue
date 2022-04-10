@@ -7,15 +7,19 @@
 
     <p>Creating innovative solutions for <strong>your</strong> business.</p>
 
-    <a class="button" href="#projects">
-      <span>Read more</span>
-    </a>
+    <organism-button :content="'Read more'" :reference="'#projects'" />
   </section>
 </template>
 
 <script>
+import OrganismButton from "@/components/organisms/OrganismButton.vue";
+
 export default {
   name: "HomeSection",
+
+  components: {
+    OrganismButton,
+  },
 };
 </script>
 

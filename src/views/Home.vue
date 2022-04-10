@@ -1,27 +1,27 @@
 <template>
-  <home-section />
-  <project-section />
-  <service-section />
-  <about-section />
-  <contact-section />
+  <section-home />
+  <section-project />
+  <section-service />
+  <section-about />
+  <section-contact />
 </template>
 
 <script>
-import HomeSection from "@/components/templates/HomeSection.vue";
-import AboutSection from "@/components/templates/AboutSection.vue";
-import ProjectSection from "@/components/templates/ProjectSection.vue";
-import ServiceSection from "@/components/templates/ServiceSection.vue";
-import ContactSection from "@/components/templates/ContactSection.vue";
+import SectionHome from "@/components/templates/SectionHome.vue";
+import SectionAbout from "@/components/templates/SectionAbout.vue";
+import SectionProject from "@/components/templates/SectionProject.vue";
+import SectionService from "@/components/templates/SectionService.vue";
+import SectionContact from "@/components/templates/SectionContact.vue";
 
 export default {
   name: "Home",
 
   components: {
-    HomeSection,
-    AboutSection,
-    ProjectSection,
-    ServiceSection,
-    ContactSection,
+    SectionHome,
+    SectionAbout,
+    SectionProject,
+    SectionService,
+    SectionContact,
   },
 };
 </script>

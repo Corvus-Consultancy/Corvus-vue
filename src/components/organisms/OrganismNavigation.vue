@@ -4,11 +4,11 @@
       <ol>
         <li>
           <a href="#home">
-            <img 
+            <img
               src="@/assets/logo.webp"
               alt="The logo of Corvus Consultancy"
               title="Corvus Consultancy"
-              />
+            />
           </a>
         </li>
 
@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "Navigation",
+  name: "OrganismNavigation",
 };
 </script>
 

@@ -42,15 +42,7 @@
       </div>
 
       <div>
-        <button class="button" type="submit">
-          <span>
-            <template v-if="loading">
-              <loader />
-            </template>
-
-            <template v-else> Send us a message </template>
-          </span>
-        </button>
+        <organism-submit :content="'Send us a message'" :loading="loading" />
       </div>
 
       <div>
@@ -69,7 +61,7 @@
 </template>
 
 <script>
-import Loader from "@/components/organisms/Loader.vue";
+import OrganismSubmit from "@/components/organisms/OrganismSubmit.vue";
 
 const DOMAIN = process.env.VUE_APP_DOMAIN;
 const METHOD = process.env.VUE_APP_METHOD;
@@ -180,7 +172,7 @@ export default {
   },
 
   components: {
-    Loader,
+    OrganismSubmit,
   },
 };
 </script>
