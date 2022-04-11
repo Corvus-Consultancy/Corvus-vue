@@ -32,7 +32,10 @@
       </ol>
     </nav>
 
-    <a href="tel:0630222522">
+    <a
+      @click="$plausible.trackEvent('Phone number clicked')"
+      href="tel:0630222522"
+    >
       <address>
         <font-awesome-icon icon="phone" />
         0630222522
