@@ -74,7 +74,16 @@ header {
     font-size: 1.25rem;
     font-weight: 400;
 
+    @media screen and (min-width: $screen-md-min) {
+      font-size: 1rem;
+    }
+
+    @media screen and (min-width: $screen-xl-min) {
+      font-size: 1.25rem;
+    }
+
     &:hover {
+      color: gray;
       color: #880000;
     }
 
