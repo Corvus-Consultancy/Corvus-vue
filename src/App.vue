@@ -38,30 +38,27 @@ body {
   scroll-behavior: smooth;
 }
 
-#home,
-#about,
-#contact,
-#services,
-#projects {
+section {
   width: 80vw;
   display: flex;
-  padding: 0 10vw;
-  margin: 20vh 0;
+  padding: 0 10vw 20vh;
 
-  min-height: 60vh;
+  min-height: 80vh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 
+  h1,
   h2 {
     font-size: 2.8rem;
     font-weight: 400;
-    margin-bottom: 6rem;
+    padding-top: 20vh;
+    margin: 0 0 6rem;
   }
 
   @media screen and (min-width: $screen-xl-min) {
     width: 60vw;
-    padding: 0 20vw;
+    padding: 0 20vw 20vh;
   }
 }
 

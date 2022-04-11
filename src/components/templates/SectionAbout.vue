@@ -1,6 +1,6 @@
 <template>
-  <section id="about">
-    <h2>About us</h2>
+  <section>
+    <h2 id="about">About us</h2>
 
     <ul>
       <li>

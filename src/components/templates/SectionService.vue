@@ -1,6 +1,6 @@
 <template>
-  <section id="services">
-    <h2>Services</h2>
+  <section>
+    <h2 id="services">Services</h2>
 
     <ul>
       <li>

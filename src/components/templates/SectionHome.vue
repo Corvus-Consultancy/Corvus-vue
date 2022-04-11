@@ -1,6 +1,6 @@
 <template>
-  <section id="home">
-    <h1>
+  <section>
+    <h1 id="home">
       <span>Corvus</span>
       <span>Consultancy</span>
     </h1>

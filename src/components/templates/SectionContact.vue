@@ -1,6 +1,6 @@
 <template>
-  <section id="contact">
-    <h2>Contact</h2>
+  <section>
+    <h2 id="contact">Contact</h2>
 
     <form @submit.prevent="addContact">
       <div>
