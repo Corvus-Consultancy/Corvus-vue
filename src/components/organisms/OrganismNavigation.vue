@@ -34,11 +34,11 @@
 
     <a
       @click="$plausible.trackEvent('Phone number clicked')"
-      href="tel:0630222522"
+      href="tel:0610072898"
     >
       <address>
         <font-awesome-icon icon="phone" />
-        0630222522
+        06-10072898
       </address>
     </a>
   </header>
