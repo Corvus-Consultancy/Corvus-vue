@@ -27,7 +27,7 @@
         <a
           @click="$plausible.trackEvent('Benjamin Torrens clicked')"
           target="_blank"
-          href="https://www.linkedin.com/in/javierdobarco"
+          href="https://www.linkedin.com/in/benjamin-torrens-eixeres-a24008234"
         >
           <article>
             <img
@@ -47,7 +47,7 @@
         <a
           @click="$plausible.trackEvent('Javier Dobarco clicked')"
           target="_blank"
-          href="https://www.linkedin.com/in/benjamin-torrens-eixeres-a24008234"
+          href="https://www.linkedin.com/in/javierdobarco"
         >
           <article>
             <img
@@ -67,7 +67,7 @@
         <a
           @click="$plausible.trackEvent('Ralfs Grauss clicked')"
           target="_blank"
-          href="https://www.linkedin.com/in/rick-louis-micha%C3%ABl-taylor"
+          href="https://www.linkedin.com/in/ralfs-eduards-grauss-4278b21b2"
         >
           <article>
             <img
@@ -87,7 +87,7 @@
         <a
           @click="$plausible.trackEvent('Rick Taylor clicked')"
           target="_blank"
-          href="https://www.linkedin.com/in/ralfs-eduards-grauss-4278b21b2"
+          href="https://www.linkedin.com/in/rick-louis-micha%C3%ABl-taylor"
         >
           <article>
             <img
