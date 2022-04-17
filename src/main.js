@@ -17,7 +17,7 @@ library.add(faAngleRight);
 
 createApp(App)
   .use(Vue3Plausible, {
-    domain: "corvus-consultancy-b3e31.web.app",
+    domain: "corvusconsultancy.nl",
     apiHost: "https://plausible.hedium.nl",
   })
   .use(store)
