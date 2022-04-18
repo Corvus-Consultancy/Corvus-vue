@@ -41,8 +41,8 @@ body {
 section {
   width: 80vw;
   display: flex;
-  padding: 0 10vw 20vh;
-
+  margin: 0 10vw 20vh;
+  box-sizing: border-box;
   min-height: 80vh;
   align-items: center;
   flex-direction: column;
@@ -58,7 +58,7 @@ section {
 
   @media screen and (min-width: $screen-xl-min) {
     width: 60vw;
-    padding: 0 20vw 20vh;
+    margin: 0 20vw 20vh;
   }
 }
 
