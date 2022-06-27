@@ -73,6 +73,7 @@ export default {
   data() {
     return {
       data: {
+        to: "raphaelkurun@gmail.com",
         name: "",
         email: "",
         phone: "",
