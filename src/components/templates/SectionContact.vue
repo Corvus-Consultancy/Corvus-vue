@@ -34,11 +34,11 @@
       </div>
 
       <textarea
-        v-model="data.message"
-        :class="{ invalid: error.message }"
+        v-model="data.content"
+        :class="{ invalid: error.content }"
         :disabled="loading"
         rows="4"
-        name="message"
+        name="content"
         maxlength="4096"
         placeholder="Message"
       ></textarea>
@@ -73,17 +73,17 @@ export default {
   data() {
     return {
       data: {
-        to: "raphaelkurun@gmail.com",
         name: "",
         email: "",
         phone: "",
-        message: "",
+        content: "",
+        website: "c98aad80-95ca-4705-af8c-10f856e97701",
       },
       error: {
         name: false,
         email: false,
         phone: false,
-        message: false,
+        content: false,
       },
       failure: false,
       success: false,
@@ -101,8 +101,8 @@ export default {
     "data.name"() {
       this.error.name = false;
     },
-    "data.message"() {
-      this.error.message = false;
+    "data.content"() {
+      this.error.content = false;
     },
   },
 
@@ -119,13 +119,13 @@ export default {
 
       this.error.name = this.invalidVarchar(this.data.name);
       this.error.phone = this.invalidVarchar(this.data.phone);
-      this.error.message = this.invalidLarge(this.data.message);
+      this.error.content = this.invalidLarge(this.data.content);
 
       if (
         this.error.name ||
         this.error.email ||
         this.error.phone ||
-        this.error.message
+        this.error.content
       ) {
         return;
       }
@@ -138,7 +138,7 @@ export default {
       const method = "POST";
       const headers = { "Content-Type": "application/json" };
 
-      const response = await fetch(`${METHOD}://${DOMAIN}/${VERSION}/contact`, {
+      const response = await fetch(`${METHOD}://${DOMAIN}/${VERSION}/message`, {
         method,
         headers,
         body,
@@ -149,7 +149,7 @@ export default {
           name: "",
           email: "",
           phone: "",
-          message: "",
+          content: "",
         };
       }
 
