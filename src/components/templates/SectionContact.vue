@@ -2,8 +2,23 @@
   <section>
     <h2 id="contact">Contact</h2>
 
-    <form @submit.prevent="addContact">
+    <form
+      name="Contact"
+      action="/"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      @submit.prevent="addContact"
+    >
       <div>
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="Contact" />
+        <input
+          type="hidden"
+          name="subject"
+          value="Bericht ontvangen op het contactformulier van Corvus Consultancy"
+        />
+
         <input
           v-model="data.name"
           :class="{ invalid: error.name }"
@@ -63,10 +78,6 @@
 <script>
 import OrganismSubmit from "@/components/organisms/OrganismSubmit.vue";
 
-const DOMAIN = process.env.VUE_APP_DOMAIN;
-const METHOD = process.env.VUE_APP_METHOD;
-const VERSION = process.env.VUE_APP_VERSION;
-
 export default {
   name: "ContactSection",
 
@@ -77,7 +88,6 @@ export default {
         email: "",
         phone: "",
         content: "",
-        website: "c98aad80-95ca-4705-af8c-10f856e97701",
       },
       error: {
         name: false,
@@ -107,7 +117,7 @@ export default {
   },
 
   methods: {
-    async addContact() {
+    async addContact(event) {
       this.success = false;
       this.failure = false;
 
@@ -134,28 +144,27 @@ export default {
 
       this.$plausible.trackEvent("Contact form submitted");
 
-      const body = JSON.stringify(this.data);
-      const method = "POST";
-      const headers = { "Content-Type": "application/json" };
+      const formHTML = event.target;
+      const formData = new FormData(formHTML);
+      const formParams = new URLSearchParams(formData);
+      const formParsed = formParams.toString();
 
-      const response = await fetch(`${METHOD}://${DOMAIN}/${VERSION}/message`, {
-        method,
-        headers,
-        body,
+      const formMethod = "POST";
+      const formHeaders = {
+        "Content-Type": "application/x-www-form-urlencoded",
+      };
+
+      const formResponse = await fetch("/", {
+        body: formParsed,
+        method: formMethod,
+        headers: formHeaders,
       });
 
-      if (response.ok) {
-        this.data = {
-          name: "",
-          email: "",
-          phone: "",
-          content: "",
-        };
-      }
-
-      this.loading = false;
-      this.success = response.ok;
-      this.failure = !response.ok;
+      setTimeout(() => {
+        this.loading = false;
+        this.success = formResponse.ok;
+        this.failure = !formResponse.ok;
+      }, 1000);
     },
 
     invalidEmail(value) {
